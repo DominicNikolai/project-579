@@ -14,13 +14,13 @@ body {
 body {
   background: #000;
   text-align: center;
-}
 
-body:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 }
 
 .scene {
