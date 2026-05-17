@@ -1,27 +1,29 @@
-.wall{
+.wall {
   background: url('/assets/bg.avif');
   background-size: cover;
 }
 
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
+  margin: 0;
   overflow: hidden;
 }
 
-body{
+body {
   background: #000;
   text-align: center;
 }
 
-body:before{
+body:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.scene{
+.scene {
   display: inline-block;
   vertical-align: middle;
   perspective: 5px;
@@ -29,7 +31,7 @@ body:before{
   position: relative;
 }
 
-.wrap{
+.wrap {
   position: absolute;
   width: 1000px;
   height: 1000px;
@@ -38,10 +40,9 @@ body:before{
   transform-style: preserve-3d;
   animation: move 12s infinite linear;
   animation-fill-mode: forwards;
-  
 }
 
-.wrap:nth-child(2){
+.wrap:nth-child(2) {
   animation: move 12s infinite linear;
   animation-delay: 6s;
 }
@@ -80,16 +81,16 @@ body:before{
 }
 
 @keyframes move {
-  0%{
+  0% {
     transform: translateZ(-500px) rotate(0deg);
   }
-  100%{
+  100% {
     transform: translateZ(500px) rotate(0deg);
   }
 }
 
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
   25% {
@@ -98,36 +99,7 @@ body:before{
   75% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
